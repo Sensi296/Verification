@@ -1,9 +1,5 @@
 function verify() {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("verify");
-    } else {
-        alert("Verification page opened successfully!");
-    }
+    alert("Verification clicked!");
 }
 
 function buyVip() {
