@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Inverness</h1>
+
+        <div class="buttons">
+            <button onclick="verify()">Verify</button>
+            <button onclick="buyVip()">Buy VIP</button>
+            <button onclick="support()">Support</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
