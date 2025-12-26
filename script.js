@@ -1,11 +1,15 @@
-function verify() {
-    alert("Verification clicked!");
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-function buyVip() {
-    window.open("https://your-payment-link.com", "_blank");
-}
+    document.getElementById("buyBtn").addEventListener("click", () => {
+        window.open("https://your-vip-link-here.com", "_blank");
+    });
 
-function support() {
-    window.open("https://discord.gg/yourserver", "_blank");
-}
+    document.getElementById("supportBtn").addEventListener("click", () => {
+        window.open("https://discord.gg/uYSKcZ3FCn", "_blank");
+    });
+
+    document.getElementById("verifyBtn").addEventListener("click", () => {
+        alert("Verification system coming soon!");
+    });
+
+});
