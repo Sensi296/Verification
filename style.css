@@ -1,43 +1,91 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
     height: 100vh;
-    background: linear-gradient(135deg, #0b0f14, #121826);
+    background: radial-gradient(circle at top, #0084ff48, #000000 70%);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .container {
-    text-align: center;
-    padding: 40px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;   /* makes buttons vertical */
+    align-items: center;
+
 }
+
 
 h1 {
+    color: #FFFFFF;
     margin-bottom: 30px;
-    font-weight: 500;
+    letter-spacing: 1px;
 }
 
-button {
-    display: block;
-    width: 220px;
-    margin: 15px auto;
-    padding: 14px;
-    border: none;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #6a5cff, #8b6bff);
-    color: white;
+p {
+    color: #E0E0E0;
+    margin-bottom: 20px;
     font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    line-height: 1.5;
 }
 
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(120, 120, 255, 0.6);
+.btn {
+    width: 240px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #000;
+    background: linear-gradient(120deg, #007BFF, #00FFFF); /* Blue-cyan gradient for normal buttons */
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    background: linear-gradient(120deg, #00BFFF, #00FFFF); /* Brighter hover for normal buttons */
+}
+
+.vip-btn::before {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,1), transparent);
+}
+
+.vip-btn {
+    background: linear-gradient(120deg, #ffa600, #FFFF00); /* Bright yellow-orange gradient for VIP button */
+    filter: brightness(1.2);
+    color: #000;
+    box-shadow: 0 0 20px rgb(255, 238, 0); /* Golden glow */
+}
+
+.vip-btn:hover {
+    background: linear-gradient(120deg, #ff9100, #ffe600); /* Pink gradient on hover */
+    box-shadow: 0 0 30px rgb(255, 238, 0); /* glow*/
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    outline: none;
 }
