@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Verification</title>
+    <title>Orange Black UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Welcome to Inverness</h1>
+    <div class="card">
+        <h1>Welcome To Inverness</h1>
 
-    <div class="buttons">
-        <button onclick="verify()">Verification</button>
-        <button onclick="buyVip()">Buy VIP</button>
-        <button onclick="support()">Support</button>
+        <p>To Support the developer you can buy vip or to use the free version please complete verification</p>
+
+        <div class="container">
+            <button class="btn vip-btn" id="buyBtn">Buy VIP</button>
+            <button class="btn" id="verifyBtn">Verification</button>
+            <button class="btn" id="supportBtn">Support</button>
+        </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <!-- JS FILE -->
+    <script src="script.js"></script>
 </body>
 </html>
